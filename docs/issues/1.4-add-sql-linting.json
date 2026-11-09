@@ -1,0 +1,18 @@
+{
+  "rank": "1.4",
+  "title": "Add SQL linting",
+  "context": "SQL is only checked for semicolons.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a SQL linter or parser.",
+    "expected_outcome": "Invalid SQL fails CI.",
+    "acceptance_criteria": [
+      "Linter runs",
+      "Dialect errors fail"
+    ]
+  },
+  "attempts": []
+}

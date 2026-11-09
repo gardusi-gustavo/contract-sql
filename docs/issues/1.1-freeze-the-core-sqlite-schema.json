@@ -1,0 +1,18 @@
+{
+  "rank": "1.1",
+  "title": "Freeze the core SQLite schema",
+  "context": "SQLite is the local reference dialect.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Review dataset_registry and ingestion_run.",
+    "expected_outcome": "SQLite DDL is stable.",
+    "acceptance_criteria": [
+      "DDL applies cleanly",
+      "Indexes exist"
+    ]
+  },
+  "attempts": []
+}

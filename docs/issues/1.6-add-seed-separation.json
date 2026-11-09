@@ -1,0 +1,18 @@
+{
+  "rank": "1.6",
+  "title": "Add seed separation",
+  "context": "Seeds belong to database, not package-sql.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Document the seed boundary.",
+    "expected_outcome": "No seed data is committed here.",
+    "acceptance_criteria": [
+      "Boundary is documented",
+      "Validation rejects seed files"
+    ]
+  },
+  "attempts": []
+}

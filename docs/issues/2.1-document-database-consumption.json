@@ -1,0 +1,18 @@
+{
+  "rank": "2.1",
+  "title": "Document database consumption",
+  "context": "Database must pin a package-sql tag.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Write the consumption contract.",
+    "expected_outcome": "Database knows which migrations to apply.",
+    "acceptance_criteria": [
+      "Lock file is documented",
+      "Upgrade path exists"
+    ]
+  },
+  "attempts": []
+}

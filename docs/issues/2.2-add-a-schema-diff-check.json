@@ -1,0 +1,18 @@
+{
+  "rank": "2.2",
+  "title": "Add a schema diff check",
+  "context": "Dialects can drift.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add a diff check between SQLite and PostgreSQL.",
+    "expected_outcome": "A field mismatch fails CI.",
+    "acceptance_criteria": [
+      "Diff covers tables",
+      "Diff covers indexes"
+    ]
+  },
+  "attempts": []
+}

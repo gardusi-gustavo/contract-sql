@@ -1,0 +1,18 @@
+{
+  "rank": "1.5",
+  "title": "Add retention tables",
+  "context": "Retention is a data-lake policy.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Add retention metadata tables.",
+    "expected_outcome": "Retention can be reasoned about in SQL.",
+    "acceptance_criteria": [
+      "Policy table exists",
+      "Indexes are present"
+    ]
+  },
+  "attempts": []
+}

@@ -1,0 +1,18 @@
+{
+  "rank": "1.2",
+  "title": "Add PostgreSQL parity",
+  "context": "The PostgreSQL schema must match SQLite.",
+  "limits": {
+    "max_commits": 5,
+    "max_file_changes": 4
+  },
+  "spec": {
+    "summary": "Review dialect parity.",
+    "expected_outcome": "Both dialects expose the same fields.",
+    "acceptance_criteria": [
+      "Parity test exists",
+      "Type mapping is documented"
+    ]
+  },
+  "attempts": []
+}
