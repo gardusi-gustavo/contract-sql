@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "name": "package-sql",
+  "name": "contract-sql",
   "organization": "gardusi-gustavo",
   "layer": 2,
   "kind": "contract",

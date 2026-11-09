@@ -1,4 +1,4 @@
-# package-sql
+# contract-sql
 
 Pure SQL schema and migration registry.
 
