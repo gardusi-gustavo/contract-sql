@@ -1,12 +1,11 @@
 {
   "schema": 1,
-  "name": "package-sql",
+  "name": "contract-sql",
   "organization": "gardusi-gustavo",
-  "layer": 2,
-  "kind": "library",
+  "layer": 1,
+  "kind": "contract",
   "visibility": "public",
   "platforms": [
-    "gitea",
     "github"
   ],
   "features": {

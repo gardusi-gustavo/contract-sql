@@ -1,6 +1,6 @@
 # SQL
 
-`package-sql` owns reusable SQL structure and patterns:
+`contract-sql` owns reusable SQL structure and patterns:
 
 - SQLite and PostgreSQL DDL
 - migration templates and conventions

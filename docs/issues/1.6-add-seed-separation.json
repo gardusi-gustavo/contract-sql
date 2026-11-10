@@ -1,7 +1,7 @@
 {
   "rank": "1.6",
   "title": "Add seed separation",
-  "context": "Seeds belong to database, not package-sql.",
+  "context": "Seeds belong to database, not contract-sql.",
   "limits": {
     "max_commits": 5,
     "max_file_changes": 4

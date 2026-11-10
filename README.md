@@ -1,6 +1,6 @@
-# package-sql
+# contract-sql
 
-SQL package: canonical DDL, migrations, indexing blueprints, and query patterns.
+Relational contract: canonical DDL, migrations, indexing blueprints, and query patterns.
 Application data, seeds, and domain datasets stay in `database-*`.
 
 ## Layout
