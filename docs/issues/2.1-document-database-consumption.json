@@ -1,7 +1,7 @@
 {
   "rank": "2.1",
   "title": "Document database consumption",
-  "context": "Database must pin a contract-sql tag.",
+  "context": "Database must pin a package-sql tag.",
   "limits": {
     "max_commits": 5,
     "max_file_changes": 4

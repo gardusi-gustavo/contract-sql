@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "name": "contract-sql",
+  "name": "package-sql",
   "organization": "gardusi-gustavo",
   "layer": 2,
-  "kind": "contract",
+  "kind": "library",
   "visibility": "public",
   "platforms": [
     "gitea",
@@ -12,7 +12,7 @@
   "features": {
     "ci": true,
     "pages": false,
-    "release": false,
+    "release": true,
     "observability": false
   },
   "limits": {
@@ -58,47 +58,27 @@
     "rules": {
       "": {
         "allow_names": [
-          ".dockerignore",
-          ".gitattributes",
-          ".gitignore",
-          "AGENTS.md",
-          "Cargo.toml",
           "README.md",
-          "Rakefile",
-          "Template.csproj",
-          "VERSION",
-          "buf.gen.yaml",
-          "buf.yaml",
-          "composer.json",
-          "go.mod",
-          "package.json",
-          "pom.xml",
-          "template.gemspec",
-          "tsconfig.json"
+          "AGENTS.md",
+          ".gitignore",
+          ".gitattributes",
+          ".dockerignore",
+          "VERSION"
         ],
         "allow_globs": []
       },
       "docs/": {
         "allow_extensions": [
           ".md"
+        ],
+        "allow_names": [
+          ".gitkeep"
         ]
       },
       "docs/issues/": {
         "allow_extensions": [
           ".json",
           ".md"
-        ],
-        "allow_names": []
-      },
-      "src/": {
-        "allow_extensions": [
-          ".html",
-          ".css",
-          ".json",
-          ".md"
-        ],
-        "allow_names": [
-          ".gitkeep"
         ]
       },
       "infra/config/": {
@@ -117,20 +97,34 @@
           "*.dockerfile"
         ]
       },
-      ".gitea/workflows/": {
+      "schemas/": {
         "allow_extensions": [
-          ".yml",
-          ".yaml"
+          ".sql",
+          ".md"
         ]
       },
-      ".gitea/": {
-        "allow_names": [
-          "pull_request_template.md"
-        ],
+      "migrations/": {
         "allow_extensions": [
+          ".sql",
+          ".md"
+        ]
+      },
+      "queries/": {
+        "allow_extensions": [
+          ".sql",
+          ".md"
+        ]
+      },
+      "tests/": {
+        "allow_extensions": [
+          ".sql",
           ".md",
-          ".yml",
-          ".yaml"
+          ".sh"
+        ]
+      },
+      "scripts/": {
+        "allow_extensions": [
+          ".py"
         ]
       },
       ".github/": {
@@ -153,53 +147,20 @@
           ".yaml",
           ".md"
         ]
-      },
-      "docs/runbooks/": {
-        "allow_extensions": [
-          ".md"
-        ]
-      },
-      "docs/security/": {
-        "allow_extensions": [
-          ".md"
-        ]
-      },
-      "scripts/": {
-        "allow_extensions": [
-          ".py"
-        ]
-      },
-      "sql/": {
-        "allow_extensions": [
-          ".sql"
-        ],
-        "allow_names": [
-          "README.md"
-        ]
-      },
-      "examples/": {
-        "allow_extensions": [
-          ".html",
-          ".css",
-          ".json",
-          ".md"
-        ],
-        "allow_names": [
-          "README.md"
-        ]
       }
     },
     "forbid": [
       {
         "regex": "(^|/)[^/]*\\.md$",
-        "reason": "Markdown is allowed only in docs/, .gitea/, .github/, README.md, and AGENTS.md",
+        "reason": "Markdown is allowed only in docs/, schemas/, migrations/, queries/, tests/, .github/, README.md, and AGENTS.md",
         "allow": [
           "^README\\.md$",
           "^AGENTS\\.md$",
           "^docs/",
           "^schemas/",
-          "^sql/",
-          "^\\.gitea/",
+          "^migrations/",
+          "^queries/",
+          "^tests/",
           "^\\.github/"
         ]
       },

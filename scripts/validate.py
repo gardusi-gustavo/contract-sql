@@ -6,7 +6,10 @@ from pathlib import Path
 def main() -> int:
     ap = argparse.ArgumentParser(); ap.add_argument("--root", default=".")
     root = Path(ap.parse_args().root)
-    files = sorted((root / "sql").rglob("*.sql"))
+    files = sorted(
+        f for base in ("schemas", "migrations", "queries", "tests")
+        for f in (root / base).rglob("*.sql")
+    )
     if not files:
         print("no sql files", file=sys.stderr); return 1
     for p in files:

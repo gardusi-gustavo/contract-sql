@@ -12,6 +12,6 @@ jobs:
   backup:
     uses: gardusi-gustavo/.github/.github/workflows/reusable-backup.yml@v0.1.1
     with:
-      repository: gardusi-gustavo/contract-sql
+      repository: gardusi-gustavo/package-sql
       retention: 3
     secrets: inherit

@@ -6,4 +6,4 @@ cd "$ROOT"
 "$ROOT/infra/scripts/ci/check-size.sh" --root "$ROOT"
 python3 scripts/validate.py --root .
 
-echo "contract checks ok"
+echo "package-sql checks ok"

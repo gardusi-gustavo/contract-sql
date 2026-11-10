@@ -1,0 +1,2 @@
+-- Example: covering index for time-ordered reads.
+-- CREATE INDEX IF NOT EXISTS idx_events_occurred_at ON events (occurred_at DESC);
